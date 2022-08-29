@@ -1,18 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      .grid {
+        height: 100%;
+        display: grid;
+        grid-template-areas:
+          "cat1 cat2"
+          "cat3 cat4";
+      }
+      .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 200px;
+      }
+    </style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cats</title>
   </head>
   <body>
-    <div class="img-grid">
-      <img src="./img/cat1.png" alt="" width="400" height="200" />
-      <img src="./img/cat2.png" alt="" width="400" height="200" />
-      <img src="./img/cat3.png" alt="" width="400" height="200" />
-      <img src="./img/cat4.png" alt="" width="400" height="200" />
+    <div class="grid">
+      <img
+        class="img"
+        id="cat1"
+        src="https://ychef.files.bbci.co.uk/976x549/p07ryyyj.jpg"
+        alt="cat"
+      />
+      <img
+        class="img"
+        id="cat2"
+        src="https://static01.nyt.com/images/2021/08/17/science/28cats1/28cats1-superJumbo.jpg "
+        alt="cat"
+      />
+      <img
+        class="img"
+        id="cat3"
+        src="https://media.wired.com/photos/5e1e646743940d0008009167/2:1/w_2298,h_1149,c_limit/Science_Cats-84873657.jpg"
+        alt="cat"
+      />
+      <img
+        class="img"
+        id="cat4"
+        src="https://cdn.theatlantic.com/thumbor/W544GIT4l3z8SG-FMUoaKpFLaxE=/0x131:2555x1568/1600x900/media/img/mt/2017/06/shutterstock_319985324/original.jpg"
+        alt="cat"
+      />
     </div>
   </body>
 </html>
