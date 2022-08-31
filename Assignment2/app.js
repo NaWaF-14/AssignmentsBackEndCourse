@@ -52,7 +52,7 @@ app.post("/people", (req, res) => {
 app.put("/people/:id", (req, res) => {
   const newAge = req.body;
   const found = people.find((item) => item.id === parseInt(req.params.id));
-  found.age = newAge;
+  found.age = newAge.age;
   res.send(people);
 });
 
